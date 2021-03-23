@@ -51,7 +51,7 @@ async function onloadCallback() {
             				includeTimestampHeader: true,
             				//additionalSigningData: "additional_signing_data"
             			  },
-            			  mode: "no-cors"
+            			  mode: "cors"
             			});
             
             			//const body = await res.json();
