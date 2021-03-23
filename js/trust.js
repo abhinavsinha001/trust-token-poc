@@ -27,7 +27,7 @@ async function onloadCallback() {
             			  trustToken: {
             				type: 'token-redemption',
             				issuer: ttIssuer,
-                                                            refreshPolicy: {none, refresh}
+                                                            refreshPolicy: 'none'
             			  },
             			  mode: "cors"
             			}).catch(function (e) {
