@@ -40,9 +40,8 @@ async function onloadCallback() {
             			var res = await fetch(sendRedemptionURL, {
             			  method: "POST",
             			  headers: new Headers({ "Signed-Headers": "sec-redemption-record, sec-time",
-            			  "Origin": "https://publisher-poc-glitch.com",
-            			  "Content-Type": "application/json",
-            			  "Access-Control-Allow-Credentials": "omit",
+            			  "Content-Type": "application/json"
+                                                                        
             			  }),
             			  trustToken: {
             				type: "send-redemption-record",
