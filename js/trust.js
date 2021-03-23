@@ -28,7 +28,7 @@ async function onloadCallback() {
             				type: 'token-redemption',
             				issuer: ttIssuer
             			  },
-            			  mode: "no-cors"
+            			  mode: "cors"
             			}).catch(function (e) {
             				console.log("Error in fetch '" +ttIssuer+ "/tt/r':", e)
             			});
