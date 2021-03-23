@@ -40,8 +40,7 @@ async function onloadCallback() {
             			var res = await fetch(sendRedemptionURL, {
             			  method: "POST",
             			  headers: new Headers({ "Signed-Headers": "sec-redemption-record, sec-time",
-            			  "Content-Type": "application/json",
-                                                  "Access-Control-Allow-Origin": "*"
+            			  "Content-Type": "application/json"
                                                                         
             			  }),
             			  trustToken: {
@@ -51,7 +50,7 @@ async function onloadCallback() {
             				includeTimestampHeader: true,
             				//additionalSigningData: "additional_signing_data"
             			  },
-            			  mode: "cors"
+            			  mode: "no-cors"
             			});
             
             			//const body = await res.json();
