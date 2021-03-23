@@ -93,7 +93,7 @@ async function onloadCallback() {
             				trustToken: {
             					type: "token-request",
             				},
-            				mode: "cors"
+            				mode: "no-cors"
             			});
             			console.log("Issuer Token is dropped");
             		}
