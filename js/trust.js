@@ -26,10 +26,9 @@ async function onloadCallback() {
             			  method: "POST",
             			  trustToken: {
             				type: 'token-redemption',
-            				issuer: ttIssuer,
-                                                            refreshPolicy: 'none'
+            				issuer: ttIssuer
             			  },
-            			  mode: "cors"
+            			  mode: "no-cors"
             			}).catch(function (e) {
             				console.log("Error in fetch '" +ttIssuer+ "/tt/r':", e)
             			});
