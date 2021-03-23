@@ -40,7 +40,8 @@ async function onloadCallback() {
             			var res = await fetch(sendRedemptionURL, {
             			  method: "POST",
             			  headers: new Headers({ "Signed-Headers": "sec-redemption-record, sec-time",
-            			  "Content-Type": "application/json"
+            			  "Content-Type": "application/json",
+                                                  "Access-Control-Allow-Origin": "*"
                                                                         
             			  }),
             			  trustToken: {
