@@ -8,10 +8,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <!DOCTYPE html>
 <html>
-
 <body>
-
-    <script type="text/javascript" src="{{ site.baseurl }}/js/trust.js"></script>
     <script type="text/javascript">
         var onloadCallback = function() {
             grecaptcha.render('reCaptcha', {
@@ -44,5 +41,4 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
     </div>
 
 </body>
-
 </html>
