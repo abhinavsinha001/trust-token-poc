@@ -118,3 +118,17 @@ async function sendRedemption(bidderEndPoint, jsonBody) {
         document.getElementById('outcomelb').innerHTML = "Error in record redemption:" + e
     });
 }
+// Recaptcha utility 
+var onloadCallback = function() {
+            grecaptcha.render('reCaptcha', {
+                'sitekey': '6Lc9Vo0aAAAAANC8-QJSuFVkXpfIbhOFJeu7tXw8',
+                'callback': successRecaptcha
+            });
+        }
+var successRecaptcha = function() {
+    console.log("Recaptcha Solved");
+    document.getElementById('ttInputElement').style.display = "inline-block"
+    document.getElementById('reCaptcha').style.display = "none"
+}
+
+    
