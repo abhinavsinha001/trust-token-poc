@@ -7,3 +7,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% include scripts.html %}
 {% include body.html %}
 
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            grecaptcha.render('reCaptcha', {
+                'sitekey': '6Lc9Vo0aAAAAANC8-QJSuFVkXpfIbhOFJeu7tXw8',
+                'callback': successRecaptcha
+            });
+        }
+        var successRecaptcha = function() {
+            console.log("Recaptcha Solved");
+            document.getElementById('ttInputElement').style.display = "inline-block"
+            document.getElementById('reCaptcha').style.display = "none"
+        }
+    </script>
