@@ -31,7 +31,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
         <input type="radio" name="issuergroup" value="TrustTokenWhiteOpsDev" onclick="setConfig(this);">WhiteOps<br>
         <input type="radio" name="issuergroup" value="TrustTokenGlitchMeDev" onclick="setConfig(this);">trust-token-issuer-demo.glitch.me
         <br><br>
-        <label style="color: #085ba5; background: aliceblue" ; id="outcomelb" name="Operation outcome">Operation outcome here...</label>
+        <label style="color:#085ba5;background:aliceblue" id="outcomelb" name="Operation outcome">Operation outcome here...</label>
         <br><br>
         <button style="border: none; background: #407db3; padding: 5px; color: #FFF; display: inline-block; margin: 10px 0px;text-transform: capitalize" onclick="hasToken()">Check if token exists</button>
         <button style="border: none; background: #407db3; padding: 5px; color: #FFF; display: inline-block; margin: 10px 0px;text-transform: capitalize" onclick="issuance()">issue token</button>
