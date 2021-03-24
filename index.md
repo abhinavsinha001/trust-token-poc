@@ -12,7 +12,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
     <script type="text/javascript">
         var onloadCallback = function() {
             grecaptcha.render('reCaptcha', {
-                'sitekey': '6Ld354waAAAAAC3ZlJmb508h8ENMorws0ZyTHdmk',
+                'sitekey': '6Lc9Vo0aAAAAANC8-QJSuFVkXpfIbhOFJeu7tXw8',
                 'callback': successRecaptcha
             });
         }
